@@ -12,11 +12,17 @@ in each step use the given properties, do not change the HTML!
 7. try repeat(auto-fit, min-max(unit, unit))
 */
 
-/* .container {
-  padding: 20px;
-} */
-
-
+.container {
+  --gap: 20px;
+  height: 100vh;
+  display: grid;
+  padding: var(--gap);
+  grid-gap: var(--gap);
+  grid-template-columns: 100px repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: 100px repeat(7, 1fr);
+  grid-auto-flow: column dense;
+  grid-auto-columns: 50px;
+}
 
 
 /*
@@ -29,8 +35,18 @@ Place items on grid
 11. use grid-auto-flow: dense; in .container
 
 */
-/* 
+
+.item-3 {
+  background: violet;
+  grid-column: -4 / -2;
+  grid-row: 3 / 5;
+  opacity: 0.5;
+}
+
 .item-4 {
-   
-} */
+  background: turquoise;
+  grid-column: -3 / -1;
+  grid-row: 4 / 5;
+  opacity: 0.5;
+}
 

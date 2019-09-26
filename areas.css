@@ -7,12 +7,33 @@
 
 .container {
   --gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-auto-rows: auto;
+  grid-template-areas: 
+  "header"
+  "navi"
+  "content"
+  "sidebar"
+  "footer";
+}
+
+@media (min-width: 500px) {
+  .container {
+    grid-template-rows: 100px auto 200px;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: 
+      "header navi navi"
+      "header content sidebar"
+      "footer footer footer";
+  }
 }
 
 .header {
   padding: var(--gap);
   background: blue;
   color: white;
+  grid-area: header;
 }
 
 .navigation {
@@ -21,19 +42,23 @@
   justify-content: space-around;
   background: #bada55;
   padding: var(--gap);
+  grid-area: navi;
 }
 
 .extra {
   background: goldenrod;
   font-family: Comic Sans MS;
   padding: var(--gap);
+  grid-area: sidebar;
 }
 
 .content {
   padding: var(--gap);
+  grid-area: content;
 }
 
 .footer {
   background: lightgrey;
   padding: 50px;
+  grid-area: footer;
 }
