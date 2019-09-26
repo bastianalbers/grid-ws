@@ -1,0 +1,39 @@
+/*  
+  use "grid-template-columns", "grid-template-rows"
+  and "grid-template-areas" in .container
+  
+  use "grid-area" in all the elements
+*/
+
+.container {
+  --gap: 20px;
+}
+
+.header {
+  padding: var(--gap);
+  background: blue;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #bada55;
+  padding: var(--gap);
+}
+
+.extra {
+  background: goldenrod;
+  font-family: Comic Sans MS;
+  padding: var(--gap);
+}
+
+.content {
+  padding: var(--gap);
+}
+
+.footer {
+  background: lightgrey;
+  padding: 50px;
+}

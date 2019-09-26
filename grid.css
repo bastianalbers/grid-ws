@@ -1,0 +1,36 @@
+/*
+display: grid; on your container
+
+in each step use the given properties, do not change the HTML!
+
+1. define "grid-template-columns"
+2. add gap using "grid-gap"
+3. explicitly make rows wit "grid-template-rows"
+4. start using fr unit instead of pixels
+5. try playing around with repeat(number, unit (unit))
+6. try repeat(auto-fill, unit) 
+7. try repeat(auto-fit, min-max(unit, unit))
+*/
+
+.container {
+  padding: 20px;
+}
+
+
+
+
+/*
+Place items on grid
+
+8. Use grid-column: span number;
+9. use grid-column: start / end;
+10. use grid-row: start / end;
+
+11. use grid-auto-flow: dense; in .container
+
+*/
+
+.item-4 {
+   
+}
+
