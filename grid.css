@@ -12,9 +12,9 @@ in each step use the given properties, do not change the HTML!
 7. try repeat(auto-fit, min-max(unit, unit))
 */
 
-.container {
+/* .container {
   padding: 20px;
-}
+} */
 
 
 
@@ -29,8 +29,8 @@ Place items on grid
 11. use grid-auto-flow: dense; in .container
 
 */
-
+/* 
 .item-4 {
    
-}
+} */
 

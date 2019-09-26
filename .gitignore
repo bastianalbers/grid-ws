@@ -1,0 +1,5 @@
+build/*
+.cache/*
+dist/*
+cheat.css
+cheat-areas.css
